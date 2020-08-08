@@ -1,0 +1,17 @@
+.container {
+    overflow:hidden;
+    height:100px;
+
+}
+.container .left,.container .right{
+    float:left;
+}
+.container.left {
+    width:20%;
+    height:100%;
+
+}
+.container .right{
+    width:80%;
+    height:100%;
+}

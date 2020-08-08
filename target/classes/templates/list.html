@@ -5,11 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-登陆成功
-current user:
-<span th:text="${session.username}"/>
+员工信息管理系统</br>
+当前用户：
+<a href="logout" th:text="${session.username}"/>
 </br>
 current role:
 <span th:text="${session.role}"/>
+<div>
+
+</div>
 </body>
 </html>

@@ -47,4 +47,11 @@ public class RegisterController {
         return success?"list":"login";
     }
 
+    @RequestMapping("logout")
+    public String logout(HttpSession session){
+        session.removeAttribute("username");
+        session.removeAttribute("role");
+        return "redirect:login";
+    }
+
 }
