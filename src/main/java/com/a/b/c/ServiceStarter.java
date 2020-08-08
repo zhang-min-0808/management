@@ -10,9 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import java.awt.*;
 import java.io.IOException;
 
-@SpringBootApplication
-@ComponentScan("com.a.b.c")
-@EnableAutoConfiguration
+@SpringBootApplication(scanBasePackages = {"com.a.b.c"})
 public class ServiceStarter {
 
     public static void main(String[] args) throws IOException {
